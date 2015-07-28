@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/playText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Recognition" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playText"
+        android:layout_marginTop="20dp"
+        android:text="StartTracking" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playText"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/start"
+        android:text="StopTracking" />
+    
+    <TextView
+        android:id="@+id/result"
+        android:layout_marginTop="100dp"
+        android:layout_width = "wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_below="@id/start"
+        android:layout_centerHorizontal="true"
+        android:text="Activity : " />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start"
+        android:layout_toRightOf="@+id/playText" 
+        android:entries="@array/actions"/>
+
+</RelativeLayout>
